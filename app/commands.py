@@ -10,7 +10,7 @@ import os
 from slugify import slugify
 
 fake = Faker('zh_CN')
-my_email = '2729538060@qq.com'
+my_email = '3465651640@qq.com'
 
 def init_data():
     """初始化数据（生成slug等）"""
@@ -85,7 +85,7 @@ def create_admin(auto=False):
         email = my_email
     else:
         # 交互式创建
-        use_default = input("是否使用默认管理员账户? (admin/123456/2729538060@qq.com) [Y/n]: ")
+        use_default = input(f"是否使用默认管理员账户? (admin/123456/{my_email}) [Y/n]: ")
         if use_default.lower() != 'n':
             username = 'admin'
             password = '123456'
