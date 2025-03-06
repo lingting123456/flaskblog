@@ -8,8 +8,8 @@
 
 ```bash
 # 下载 docker-compose.yml
-$ curl -o docker-compose.yml https://raw.githubusercontent.com/lingting724/flaskblog/master/docker-compose.yml
-$ curl -o nginx.conf https://raw.githubusercontent.com/lingting724/flaskblog/master/nginx.conf
+$ curl -o docker-compose.yml https://raw.githubusercontent.com/lingting123456/flaskblog/master/docker-compose.yml
+$ curl -o nginx.conf https://raw.githubusercontent.com/lingting123456/flaskblog/master/nginx.conf
 
 # 启动服务
 $ docker-compose up -d
@@ -25,7 +25,7 @@ $ docker-compose exec web flask init-data
 
 ```bash
 # 克隆项目
-$ git clone https://github.com/lingting724/flaskblog.git
+$ git clone https://github.com/lingting123456/flaskblog.git
 $ cd flaskblog
 
 # 构建并启动
@@ -40,7 +40,7 @@ $ docker-compose up -d --build
 ## 默认管理员账号
 - 用户名：admin
 - 密码：123456
-- 邮箱：2729538090@qq.com
+- 邮箱：3465651640@qq.com
 
 ## 维护命令
 
@@ -113,8 +113,8 @@ $ docker-compose exec web flask run
 ## 部署自己的博客系统
 ```bash
 # 下载编排文件
-$ curl -o docker-compose.yml https://raw.githubusercontent.com/lingting724/flaskblog/master/docker-compose.yml
-$ curl -o nginx.conf https://raw.githubusercontent.com/lingting724/flaskblog/master/nginx.conf
+$ curl -o docker-compose.yml https://raw.githubusercontent.com/lingting123456/flaskblog/master/docker-compose.yml
+$ curl -o nginx.conf https://raw.githubusercontent.com/lingting123456/flaskblog/master/nginx.conf
 # 启动
 $ docker-compose up -d
 # 停止
