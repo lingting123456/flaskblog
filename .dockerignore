@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+.git
+.gitignore
+.env
+instance/*
+app/static/uploads/*
+*.db
+.pytest_cache
+.coverage
+htmlcov
