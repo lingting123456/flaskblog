@@ -54,17 +54,16 @@ $ docker run -d \
 
 ## 删除数据卷
 ```bash
-# 查看镜像
-$ docker images
 # 查看容器
-$ docker container ls
-# 查看数据卷
-$ docker volume ls
-# 首先停止并删除所有容器
+$ docker ps
 $ docker stop $(docker ps -aq)
 $ docker rm $(docker ps -aq)
-
-# 然后删除所有数据卷
+$ docker container prune -a -f
+# 查看镜像
+$ docker images
+$ docker image prune -a -f
+# 查看数据卷
+$ docker volume ls
 $ docker volume rm $(docker volume ls -q)
 # 清理所有未使用的对象，包括镜像、容器、数据卷
 $ docker system prune -a --volumes
