@@ -9,7 +9,7 @@
 $ set HTTP_PROXY=http://127.0.0.1:7890
 $ set HTTPS_PROXY=http://127.0.0.1:7890
 # 构建镜像
-$ docker build -t lingting123456/flaskblog:latest .
+$ docker build -t lingting724/flaskblog:latest .
 # 检查镜像是否构建成功
 $ docker images | grep flaskblog
 ```
@@ -20,7 +20,7 @@ $ docker images | grep flaskblog
 # 登录Docker Hub
 $ docker login
 # 推送镜像
-$ docker push lingting123456/flaskblog:latest
+$ docker push lingting724/flaskblog:latest
 ```
 
 ## 运行容器
@@ -35,7 +35,7 @@ $ docker run -d \
   -e AUTO_GENRATE_POSTS=true \
   -v flaskblog-data:/flaskblog/instance \
   -v flaskblog-uploads:/flaskblog/app/static/uploads \
-  lingting123456/flaskblog:latest
+  lingting724/flaskblog:latest
 ```
 
 
@@ -73,7 +73,7 @@ $ docker system prune -a --volumes
 ## 快速开始（普通用户使用）
 ```bash
 # 最简单的运行方式（使用默认配置）
-$ docker run -d -p 5000:5000 lingting123456/flaskblog:latest 
+$ docker run -d -p 5000:5000 lingting724/flaskblog:latest 
 # 完整配置的运行方式
 $ docker run -d \
   -p 5000:5000 \
@@ -85,5 +85,5 @@ $ docker run -d \
   -e AUTO_GENRATE_POSTS=true \
   -v flaskblog-data:/flaskblog/instance \
   -v flaskblog-uploads:/flaskblog/app/static/uploads \
-  lingting123456/flaskblog:latest
+  lingting724/flaskblog:latest
 ```
