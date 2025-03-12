@@ -4,7 +4,7 @@ uploads/*
 !uploads/avatars/.gitkeep
 !uploads/posts/.gitkeep
 
-# 忽略实例文件
+# 忽略数据库文件和迁移文件
 instance/*
 !instance/.gitkeep
 migrations/*

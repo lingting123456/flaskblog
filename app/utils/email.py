@@ -1,5 +1,6 @@
 from flask import current_app
 from flask import url_for
+from flask import request
 from flask_mail import Message
 from threading import Thread
 from app import mail
@@ -37,7 +38,7 @@ def send_verification_code(email, code):
 def send_password_reset_email(user):
     """发送密码重置邮件"""
     token = user.get_reset_password_token()
-    reset_url = f'http://192.168.21.4:5000{url_for("auth.reset_password", token=token)}'
+    reset_url = f'{current_app.config["FRONTEND_URL"]}{url_for("auth.reset_password", token=token)}'
     
     # 渲染HTML模板
     html = render_template('email/reset_password.html',

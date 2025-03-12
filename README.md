@@ -87,3 +87,9 @@ $ docker run -d \
   -v flaskblog-uploads:/flaskblog/app/static/uploads \
   lingting724/flaskblog:latest
 ```
+
+## 本地运行的方式需要创建一个 .env 文件
+```python
+MAIL_USERNAME=123456789@qq.com
+MAIL_PASSWORD=123456
+```
